@@ -27,20 +27,33 @@ ul {
 
 .flex {
     display: flex;
+}
 
-
+.container {
+    height: calc(100vh - 50px);
 }
 
 .bg-foot {
     height: 50px;
     background: #282828;
+}
 
+.center {
+    text-align: center;
 }
 
 main {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+    height: 100%;
+    background: #141922;
 }
+
+
+
+
+
+
+
+
 
 /*-------------------
     HEADER
@@ -51,7 +64,6 @@ main {
     color: #6d6d6d;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 50px);
     line-height: 1.5;
     padding: 20px;
 
@@ -116,10 +128,6 @@ main {
     height: 20px;
     background: grey;
     border-radius: 50%;
-
-
-
-
 }
 
 .img-prof {
@@ -145,6 +153,10 @@ main {
 
 
 
+
+
+
+
 /*-------------------
    MAIN
 -------------------*/
@@ -152,19 +164,22 @@ main {
 .main-head {
     color: #fff;
     padding: 20px;
-    display: flex;
-    justify-content: flex-end;
     position: sticky;
     top: 0;
     z-index: 10;
     width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: #080b12;
+
+
 }
 
-.main-content {
-    background: #141922;
-    height: calc(100vh - 80px);
+.main-content .flex {
+    justify-content: center;
+    gap: 10px;
 }
-
 
 .btn {
     background: transparent;
@@ -173,4 +188,16 @@ main {
     border-color: #fff;
     border-radius: 20px;
     font-size: 10px;
+
+}
+
+main .col {
+    width: calc(100%/6);
+}
+
+.main-content ul {
+    color: #7d7f84;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
 }
