@@ -259,6 +259,17 @@ main .col {
     margin-bottom: 20px;
 }
 
+
+
+.square-col {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 15px;
+
+}
+
+
+
 /*-------------------
    FOOTER
 -------------------*/
@@ -294,6 +305,10 @@ main .col {
 
 
     }
+
+    .col-special {
+        width: 50%;
+    }
 }
 
 
@@ -306,7 +321,8 @@ main .col {
 
 
     .main-content .col {
-        width: calc(100% / 2);
+        width: 50%;
+
     }
 
 
