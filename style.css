@@ -35,7 +35,7 @@ ul {
 }
 
 .container {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 }
 
 
@@ -275,9 +275,80 @@ main .col {
 -------------------*/
 
 .bg-foot {
-    height: 50px;
+    height: 80px;
     background: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+.left-foot {
+    display: flex;
+    padding-left: 10px;
+}
+
+.left-foot img {
+    height: 35px;
+}
+
+.name-song {
+    color: #fff;
+    font-size: 13px;
+    margin: 8px 5px;
+}
+
+.description {
+    color: #7d7f84;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.name-song .like {
+    margin-left: 35px;
+}
+
+.name-song .like,
+.name-song .save {
+    color: #7d7f84;
+    margin-right: 5px;
+
+}
+
+.right-foot {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.right-foot button {
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.bar {
+    height: 6px;
+    background: #7d7f84;
+    width: 100px;
+    margin-top: 7px;
+
+
+}
+
+.bar-inside {
+    height: 100%;
+    background: #fff;
+    width: 20%;
+    border-radius: 20px;
+
+}
+
+
+
+
 
 
 /*-------------------
