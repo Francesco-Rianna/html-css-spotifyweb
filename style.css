@@ -252,6 +252,12 @@ main .col {
 
 
 @media screen and (max-width: 700px) {
+
+    header {
+        width: 30px;
+        padding: 5px;
+    }
+
     .logo {
         display: none;
 
@@ -262,7 +268,32 @@ main .col {
     }
 
     .logo-small img {
+        height: 20px;
+    }
+
+    .first-nav img {
         height: 30px;
+    }
+
+    .first-nav span {
+        display: none;
+    }
+
+    .title-playlist,
+    .playlist {
+        display: none;
+    }
+
+    .header-foot .app {
+        display: none;
+    }
+
+    header hr {
+        display: none;
+    }
+
+    .profile span {
+        display: none;
     }
 
 }
