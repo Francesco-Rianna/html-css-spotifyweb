@@ -248,11 +248,37 @@ main .col {
     main .col {
         width: calc(100%/4);
     }
+
+    .main-content .flex {
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 20px;
+
+
+    }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
+
+
+    .main-content .flex {
+        line-height: 3;
+    }
+
+    .main-content .col {
+        width: calc(100% / 2);
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
     header {
         width: 30px;
         padding: 5px;
@@ -294,6 +320,12 @@ main .col {
 
     .profile span {
         display: none;
+    }
+
+    .main-content .flex {
+        font-size: 15px;
+
+
     }
 
 }
