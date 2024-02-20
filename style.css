@@ -7,10 +7,9 @@
     box-sizing: border-box;
 }
 
-header {
-    background: #000000;
-}
-
+/*-------------------
+   TYPO
+-------------------*/
 body {
     font-family: "Montserrat", sans-serif;
     background: #080b12;
@@ -20,6 +19,12 @@ img {
     max-width: 100%;
 
 }
+
+/*-------------------
+   GENERAL
+-------------------*/
+
+
 
 ul {
     list-style: none;
@@ -33,19 +38,11 @@ ul {
     height: calc(100vh - 50px);
 }
 
-.bg-foot {
-    height: 50px;
-    background: #282828;
-}
 
 .center {
     text-align: center;
 }
 
-main {
-    height: 100%;
-    background: #141922;
-}
 
 
 
@@ -58,9 +55,10 @@ main {
 /*-------------------
     HEADER
 -------------------*/
-
-.container-head {
-    max-width: 200px;
+header {
+    background: #000000;
+    width: 200px;
+    flex-shrink: 0;
     color: #6d6d6d;
     display: flex;
     flex-direction: column;
@@ -70,18 +68,19 @@ main {
 
 }
 
+
 .logo {
-    width: 130px;
+    max-height: 50px;
     margin-bottom: 20px;
 }
 
-.end {
-    margin-top: auto;
+.logo-small {
+    display: none;
 }
 
 
 
-.container-head li img {
+.first-nav li img {
     width: 20px;
     vertical-align: bottom;
 
@@ -89,13 +88,13 @@ main {
 
 
 
-.container-head li {
+header li {
     font-size: 12px;
     margin-bottom: 10px;
 
 }
 
-.container-head h3 {
+.title-playlist {
     margin-top: 20px;
     color: #fff;
     font-size: 15px;
@@ -115,6 +114,31 @@ main {
 .text-square {
     line-height: 30px;
     margin-left: 8px;
+}
+
+.playlist {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.header-foot {
+    margin-top: auto;
+}
+
+.download {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.download img {
+    width: 20px;
+}
+
+.download div {
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .profile {
@@ -145,6 +169,13 @@ main {
 /*-------------------
    MAIN
 -------------------*/
+
+main {
+    background: #141922;
+    overflow-y: auto;
+    width: 100%;
+}
+
 
 .main-head {
     color: #fff;
@@ -191,6 +222,22 @@ main .col {
     margin-top: 10px;
 }
 
+/*-------------------
+   FOOTER
+-------------------*/
+
+.bg-foot {
+    height: 50px;
+    background: #282828;
+}
+
+
+/*-------------------
+  RESPONSIVE 
+-------------------*/
+
+
+
 @media screen and (max-width: 1100px) {
 
     .main-content .row {
@@ -201,4 +248,21 @@ main .col {
     main .col {
         width: calc(100%/4);
     }
+}
+
+
+@media screen and (max-width: 700px) {
+    .logo {
+        display: none;
+
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    .logo-small img {
+        height: 30px;
+    }
+
 }
