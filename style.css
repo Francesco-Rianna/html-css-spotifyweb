@@ -43,6 +43,10 @@ ul {
     text-align: center;
 }
 
+.col {
+    padding: 0 7px;
+}
+
 
 
 
@@ -177,6 +181,7 @@ main {
 }
 
 
+
 .main-head {
     color: #fff;
     padding: 20px;
@@ -222,6 +227,29 @@ main .col {
     margin-top: 10px;
 }
 
+.recently {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 7px;
+}
+
+.title-film {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #7d7f84;
+    line-height: 3;
+}
+
 /*-------------------
    FOOTER
 -------------------*/
@@ -252,7 +280,8 @@ main .col {
     .main-content .flex {
         flex-wrap: wrap;
         gap: 20px;
-        font-size: 20px;
+        font-size: 22px;
+        line-height: 3;
 
 
     }
@@ -260,12 +289,12 @@ main .col {
 
 
 @media screen and (max-width: 700px) {
-
-
-
     .main-content .flex {
-        line-height: 3;
+        font-size: 20px;
     }
+
+
+
 
     .main-content .col {
         width: calc(100% / 2);
