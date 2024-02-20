@@ -250,6 +250,15 @@ main .col {
     line-height: 3;
 }
 
+.section-for-john .recently,
+.subtitle {
+    padding: 0 7px;
+}
+
+.section-for-john {
+    margin-bottom: 20px;
+}
+
 /*-------------------
    FOOTER
 -------------------*/
