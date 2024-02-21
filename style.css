@@ -234,6 +234,44 @@ main .col {
     padding: 30px 7px;
 }
 
+/*-------------------
+   ALBUM
+-------------------*/
+.album {
+    position: relative;
+}
+
+.album-image img {
+    display: block;
+}
+
+.album-image-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: #fff;
+}
+
+.album:hover .album-image-hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+/*-------------------
+   ALBUM-END
+-------------------*/
+
+
+
 .title-film {
     color: #fff;
     font-size: 20px;
@@ -265,6 +303,13 @@ main .col {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 15px;
+    position: relative;
+
+}
+
+.square-col:hover .album-image-hover {
+    opacity: 1;
+    font-size: 35px;
 
 }
 
@@ -313,6 +358,39 @@ main .col {
     color: #7d7f84;
     margin-right: 5px;
 
+}
+
+.playback-keys {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.playback-keys i {
+    margin-right: 20px;
+    font-size: 25px;
+    color: #fff;
+
+}
+
+.center-foot .flex {
+    align-items: center;
+}
+
+.center-foot .min {
+    color: #fff;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.center-foot .bar {
+    width: 400px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.playback-keys .play {
+    font-size: 30px;
 }
 
 .right-foot {
