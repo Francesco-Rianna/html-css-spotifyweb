@@ -445,6 +445,7 @@ main .col {
 .right-foot {
     display: flex;
     margin-right: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -587,5 +588,18 @@ main .col {
 
 
     }
+
+    .center-foot .bar {
+        width: 150px;
+    }
+
+    .center-foot .playback-keys i {
+        font-size: 15px;
+    }
+
+    .left-foot {
+        padding-left: 0px;
+    }
+
 
 }
