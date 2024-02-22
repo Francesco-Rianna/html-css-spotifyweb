@@ -47,6 +47,52 @@ ul {
     padding: 0 7px;
 }
 
+/*-------------------
+    HOVER
+-------------------*/
+/* header */
+.first-nav li:hover,
+.playlist li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ----header */
+
+/* main */
+.main-head .btn:hover {
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.main-content li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ----main */
+
+/* footer*/
+
+.left-foot span:hover,
+.playback-keys i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.playback-keys i:hover {
+    font-size: 28px;
+}
+
+.playback-keys .play:hover {
+    font-size: 35px;
+}
+
+
+
+
+
+
 
 
 
@@ -89,8 +135,6 @@ header {
     vertical-align: bottom;
 
 }
-
-
 
 header li {
     font-size: 12px;
@@ -201,6 +245,7 @@ main {
     justify-content: center;
     gap: 10px;
 }
+
 
 .row {
     display: flex;
@@ -393,6 +438,10 @@ main .col {
     font-size: 30px;
 }
 
+.playback-keys .pause {
+    display: none;
+}
+
 .right-foot {
     display: flex;
     margin-right: 10px;
@@ -472,6 +521,14 @@ main .col {
     .main-content .col {
         width: 50%;
 
+    }
+
+    .center-foot .bar {
+        width: 200px;
+    }
+
+    .center-foot .playback-keys i {
+        font-size: 20px;
     }
 
 
